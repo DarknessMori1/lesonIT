@@ -1,8 +1,16 @@
+def get_sq_rect(length, width):
+    return length * width
+
+def get_sq_square(a):
+    return a * a
+
 tp = input().strip()
 
 if tp == "RECT":
-    def get_sq(length, width):
-        return length * width
+    get_sq = get_sq_rect
+    # пример вызова:
+    print(get_sq(3, 4))
 else:
-    def get_sq(a):
-        return a * a
+    get_sq = get_sq_square
+    # пример вызова:
+    print(get_sq(5))
