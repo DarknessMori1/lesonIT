@@ -5,4 +5,4 @@ cities = input().split()
 d = {city: cities_information(city)[1] for city in cities}
 
 for city in sorted(d, key=d.get):
-    print(f"'{city}': {d[city]}")пше
+    print(f"'{city}': {d[city]}")
